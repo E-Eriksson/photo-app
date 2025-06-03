@@ -87,10 +87,8 @@ const FullScreenPhotoScreen = ({ route, navigation }) => {
     if (value === undefined || value === null) return "N/A";
     if (typeof value === "object") return JSON.stringify(value);
 
-    // Specific formatting for known keys
     if (key === "FNumber") return `f/${value}`; // Aperture
     if (key === "ExposureTime" && typeof value === "number") {
-      // Shutter Speed
       if (value < 1) return `1/${Math.round(1 / value)}s`;
       return `${value}s`;
     }
@@ -197,9 +195,6 @@ const FullScreenPhotoScreen = ({ route, navigation }) => {
               ? `${photo.width} x ${photo.height}`
               : "N/A"}
           </Text>
-
-          {/* You can add more EXIF fields here if needed */}
-          {/* For a more comprehensive list, you might want to iterate over Object.keys(exif) but that could be very long */}
         </ScrollView>
         <View style={stylesFull.dragHandleContainer}>
           <View style={stylesFull.dragHandle} />
