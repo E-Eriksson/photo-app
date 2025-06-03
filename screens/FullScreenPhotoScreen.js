@@ -236,7 +236,7 @@ const stylesFull = StyleSheet.create({
     alignItems: "center",
   },
   errorText: {
-    color: "white", // Ensure error text is also visible
+    color: "white",
     fontSize: 18,
   },
   fullImage: {
@@ -261,14 +261,13 @@ const stylesFull = StyleSheet.create({
     elevation: 10,
   },
   metadataScrollView: {
-    flex: 1, // Allows content to scroll if it overflows
+    flex: 1,
   },
   metadataContent: {
-    // Applied to ScrollView's contentContainerStyle
     paddingTop: (Platform.OS === "ios" ? 50 : 20) + 20,
     paddingBottom: 20,
     paddingLeft: 20,
-    paddingRight: 10, // Padding for the content inside scrollview
+    paddingRight: 10,
   },
   dragHandleContainer: {
     width: 30,
@@ -285,7 +284,7 @@ const stylesFull = StyleSheet.create({
   metadataTitle: {
     fontSize: 20,
     fontWeight: "600",
-    color: "#FFFFFF", // Changed to white
+    color: "#FFFFFF",
     marginBottom: 25,
     paddingBottom: 10,
     borderBottomWidth: 1,
@@ -293,7 +292,7 @@ const stylesFull = StyleSheet.create({
   },
   metadataText: {
     fontSize: 15,
-    color: "#FFFFFF", // Changed to white
+    color: "#FFFFFF",
     marginBottom: 10,
     lineHeight: 22,
   },
@@ -304,9 +303,6 @@ const stylesFull = StyleSheet.create({
     padding: 8,
     borderRadius: 20,
     backgroundColor: "rgba(0,0,0,0.4)",
-  },
-  backButtonIcon: {
-    // Optional styling
   },
 });
 
