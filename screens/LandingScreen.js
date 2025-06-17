@@ -1,11 +1,4 @@
-import {
-  View,
-  Text,
-  StyleSheet,
-  Button,
-  ImageBackground,
-  SafeAreaView,
-} from "react-native";
+import { View, Text, StyleSheet, Button, SafeAreaView } from "react-native";
 
 const LandingScreen = ({ navigation }) => {
   return (
