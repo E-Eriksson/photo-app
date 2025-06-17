@@ -105,6 +105,7 @@ const PhotosScreen = ({ navigation }) => {
 
 const stylesPhotos = StyleSheet.create({
   safeArea: {
+    marginTop: 50,
     flex: 1,
     backgroundColor: "#f8f9fa",
   },

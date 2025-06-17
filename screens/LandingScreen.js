@@ -9,36 +9,23 @@ import {
 
 const LandingScreen = ({ navigation }) => {
   return (
-    <ImageBackground
-      source={{
-        uri: "[https://placehold.co/800x1200/2c3e50/ecf0f1?text=Welcome](https://placehold.co/800x1200/2c3e50/ecf0f1?text=Welcome)",
-      }}
-      style={stylesLanding.background}
-      resizeMode="cover"
-    >
-      <SafeAreaView style={stylesLanding.safeArea}>
-        <View style={stylesLanding.container}>
-          <Text style={stylesLanding.title}>My Photography</Text>
-          <Text style={stylesLanding.subtitle}>
-            Discover moments captured in time.
-          </Text>
-          <View style={stylesLanding.buttonContainer}>
-            <Button
-              title="Explore Gallery"
-              onPress={() => navigation.navigate("Photos")}
-              color="#3498db"
-            />
-          </View>
+    <SafeAreaView style={stylesLanding.safeArea}>
+      <View style={stylesLanding.container}>
+        <Text style={stylesLanding.title}>Photo Inspector</Text>
+        <Text style={stylesLanding.subtitle}>Discover hidden data!</Text>
+        <View style={stylesLanding.buttonContainer}>
+          <Button
+            title="Explore Gallery"
+            onPress={() => navigation.navigate("Photos")}
+            color="#3498db"
+          />
         </View>
-      </SafeAreaView>
-    </ImageBackground>
+      </View>
+    </SafeAreaView>
   );
 };
 
 const stylesLanding = StyleSheet.create({
-  background: {
-    flex: 1,
-  },
   safeArea: {
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.3)",
